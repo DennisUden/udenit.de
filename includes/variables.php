@@ -44,6 +44,6 @@ $routes = [
 $route = $routes[$path] ?? $routes['/'];
 $title = $route['title'];
 $description = $route['description'];
-$controller = $_SERVER['DOCUMENT_ROOT'] . '/controllers/' . $route['controller'];
+$controller = $_SERVER['DOCUMENT_ROOT'].'/controllers/'.$route['controller'];
 
 ?>
