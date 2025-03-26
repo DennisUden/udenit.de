@@ -7,7 +7,7 @@ $defaultRoute = [
         'controller'    => 'index.php',
         'title'         => 'UDENIT',
         'description'   => 'Startseite von UDENIT. IT-Beratung und Dienstleistungen in der Gemeinde Ihlow.',
-        'canonical'     => ''
+        'canonical'     => '/'
 ];
 
 $routes = [
