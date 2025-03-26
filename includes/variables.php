@@ -3,22 +3,13 @@ define('NAV_PATH', $_SERVER['DOCUMENT_ROOT'].'/includes/nav.php');
 define('FOOTER_PATH', $_SERVER['DOCUMENT_ROOT'].'/includes/footer.php');
 define('HEAD_PATH', $_SERVER['DOCUMENT_ROOT'].'/includes/head.php');
 
+$defaultRoute = [
+        'controller' => 'index.php',
+        'title' => 'UDENIT',
+        'description' => 'Startseite von UDENIT. IT-Beratung und Dienstleistungen in der Gemeinde Ihlow.'
+];
+
 $routes = [
-    '/' => [
-        'controller' => 'index.php',
-        'title' => 'UDENIT',
-        'description' => 'Startseite von UDENIT. IT-Beratung und Dienstleistungen in der Gemeinde Ihlow.'
-    ],
-    '/index' => [
-        'controller' => 'index.php',
-        'title' => 'UDENIT',
-        'description' => 'Startseite von UDENIT. IT-Beratung und Dienstleistungen in der Gemeinde Ihlow.'
-    ],
-    '/index.php' => [
-        'controller' => 'index.php',
-        'title' => 'UDENIT',
-        'description' => 'Startseite von UDENIT. IT-Beratung und Dienstleistungen in der Gemeinde Ihlow.'
-    ],
     '/loesungen' => [
         'controller' => 'loesungen.php',
         'title' => 'UDENIT - Lösungen',
@@ -41,9 +32,9 @@ $routes = [
     ]
 ];
 
-$route = $routes[$path] ?? $routes['/'];
-$title = $route['title'];
-$description = $route['description'];
-$controller = $_SERVER['DOCUMENT_ROOT'].'/controllers/'.$route['controller'];
+$route          = $routes[$path]        ?? $defaultRoute;
+$title          = $route['title']       ?? $defaultRoute['title'];
+$description    = $route['description'] ?? $defaultRoute['description'];
+$controller     = $_SERVER['DOCUMENT_ROOT'] . '/controllers/' . $route['controller'];
 
 ?>
