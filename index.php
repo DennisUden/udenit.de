@@ -5,11 +5,6 @@ $path	= parse_url($uri, PHP_URL_PATH);
 require_once $_SERVER['DOCUMENT_ROOT'].'/includes/variables.php';
 
 switch ($path) {
-	case '/':
-	case '/index':
-	case '/index.php':
-		require $_SERVER['DOCUMENT_ROOT'].'/controllers/index.php';
-		break;
 	case '/loesungen':
 		require $_SERVER['DOCUMENT_ROOT'].'/controllers/loesungen.php';
 		break;
