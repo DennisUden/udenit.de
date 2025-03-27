@@ -1,11 +1,11 @@
 <?php
 define('NAV_PATH',      $_SERVER['DOCUMENT_ROOT'].'/includes/nav.php');
-define('FOOTER_PATH',   $_SERVER['DOCUMENT_ROOT'].'/includes/footer.php');
-define('HEAD_PATH',     $_SERVER['DOCUMENT_ROOT'].'/includes/head.php');
+define('FOOTER_PATH',   $_SERVER['DOCUMENT_ROOT'].'/includes/footer.php');      
+define('HEAD_PATH',     $_SERVER['DOCUMENT_ROOT'].'/includes/head.php');        
 
 $defaultRoute = [
         'controller'    => 'index.php',
-        'title'         => 'UDENIT',
+        'title'         => 'UDENIT - IT-Beratung und Dienstleistungen in Ihlow',
         'description'   => 'Startseite von UDENIT. IT-Beratung und Dienstleistungen in der Gemeinde Ihlow.',
         'canonical'     => '/'
 ];
@@ -13,13 +13,13 @@ $defaultRoute = [
 $routes = [
     '/loesungen' => [
         'controller'    => 'loesungen.php',
-        'title'         => 'UDENIT - Lösungen',
+        'title'         => 'UDENIT - IT-Lösungen für Unternehmen in Ihlow',
         'description'   => 'Unsere IT-Lösungen für Ihr Unternehmen.',
         'canonical'     => '/loesungen'
     ],
     '/kontakt' => [
         'controller'    => 'kontakt.php',
-        'title'         => 'UDENIT - Kontakt',
+        'title'         => 'UDENIT - Kontakt für IT-Beratung in Ihlow',
         'description'   => 'Kontaktieren Sie UDENIT für IT-Beratung und Dienstleistungen.',
         'canonical'     => '/kontakt'
     ],
@@ -31,7 +31,7 @@ $routes = [
     ],
     '/datenschutz' => [
         'controller'    => 'datenschutz.php',
-        'title'         => 'UDENIT - Datenschutz',
+        'title'         => 'UDENIT - Datenschutzerklärung',
         'description'   => 'Datenschutzerklärung von UDENIT.',
         'canonical'     => '/datenschutz'
     ]
