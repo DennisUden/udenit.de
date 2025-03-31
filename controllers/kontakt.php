@@ -4,9 +4,11 @@
 <div id="container">
 	<div id="main">
 		<div class="contentCentered">
-			<h1>Sie erreichen mich unter</h1>
-            
-			<p>Telefon: +49 15154735320<br>E-Mail: info@udenit.de</p>
+                	<h1>Sie erreichen mich unter</h1>
+                	<p>+49 15154735320</p>         
+                        <p>info@udenit.de</p>        
+                        <p><a href="https://github.com/DennisUden">Github</p>  
+                        <p><a href="https://www.linkedin.com/in/dennis-uden-b49620250/">LinkedIn</p> 
 		</div>
 	</div>
 </div>
