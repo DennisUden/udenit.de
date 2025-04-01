@@ -11,6 +11,7 @@
         <meta property= "og:locale"     content="de_DE">
         <meta property= "og:type"       content="website">
         <meta property= "og:url"        content="<?php echo 'https://udenit.de'.$route['canonical']; ?>">
+        <meta property= "og:image"      content="https://udenit.de/og_preview.png">
         <meta property= "og:site_name"  content="UdenIT">
         <meta property= "og:title"      content="<?php echo $title; ?>">
         <meta property= "og:description"content="<?php echo $description; ?>">
