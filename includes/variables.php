@@ -4,13 +4,19 @@ define('FOOTER_PATH',   $_SERVER['DOCUMENT_ROOT'].'/includes/footer.php');
 define('HEAD_PATH',     $_SERVER['DOCUMENT_ROOT'].'/includes/head.php');        
 
 $defaultRoute = [
-        'controller'    => 'index.php',
-        'title'         => 'UDENIT - IT-Beratung und Dienstleistungen in Ihlow',
-        'description'   => 'UDENIT bietet IT-Beratung und Servermanagement in Ihlow, Ostfriesland – Ihr Experte für Netzwerke und IT-Lösungen.',
-        'canonical'     => '/'
+	'controller'	=> '404.php',
+	'title'		=> 'UDENIT - 404',
+	'description'	=> 'UDENIT - 404 Fehler - Seite konnte nicht gefunden werden',
+       	'canonical'	=> '/404'	
 ];
 
 $routes = [
+    '/' => [
+        'controller'    => 'index.php',
+        'title'         => 'UDENIT - IT-Beratung und Dienstleistungen in Ihlow',
+        'description'   => 'UDENIT bietet IT-Beratung und Servermanagement in Ihlow, Ostfriesland – Ihr Experte für Netzwerke und IT-Lösungen.',
+	'canonical'     => '/'
+    ],
     '/loesungen' => [
         'controller'    => 'loesungen.php',
         'title'         => 'UDENIT - IT-Lösungen für Unternehmen in Ihlow',
@@ -34,12 +40,26 @@ $routes = [
         'title'         => 'UDENIT - Datenschutzerklärung',
         'description'   => 'Datenschutz bei UDENIT: Servermanagement und IT-Beratung in Ihlow, Ostfriesland – Ihre Daten sicher in unseren Händen.',
         'canonical'     => '/datenschutz'
+    ],
+    '/blog' => [
+	    'controller'	=> 'blog/ksnip.php',
+	    'title'		=> 'UDENIT Blog - Einfache Screenshots in Linux',
+	    'description'	=> 'UDENIT Blog - Einfache Screenshots in Linux - Pfeilschnelle Bildaufnahmen und Annotierungen mithilfe von Ksnip als Alternative zu Snipping Tool',
+	    'canonical'		=> '/blog/ksnip'
+    ],
+    '/blog/ksnip' => [
+	    'controller'	=> 'blog/ksnip.php',
+	    'title'		=> 'UDENIT Blog - Einfache Screenshots in Linux',
+	    'description'	=> 'UDENIT Blog - Einfache Screenshots in Linux - Pfeilschnelle Bildaufnahmen und Annotierungen mithilfe von Ksnip als Alternative zu Snipping Tool',
+	    'canonical'		=> '/blog/ksnip'
     ]
 ];
-
-$route          = $routes[$path]        ?? $defaultRoute;
-$title          = $route['title']       ?? $defaultRoute['title'];
-$description    = $route['description'] ?? $defaultRoute['description'];
+if (empty($routes[$path])){
+	http_response_code(404);
+}
+$route          = $routes[$path] ?? $defaultRoute;
+$title          = $route['title'];
+$description    = $route['description'];
 $controller     = $_SERVER['DOCUMENT_ROOT'] . '/controllers/' . $route['controller'];
 
 ?>

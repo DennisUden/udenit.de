@@ -85,9 +85,29 @@ h3 {
 p {
     padding-bottom: 10px;
     padding-top: 10px;
+} 
+
+pre {
+    background-color: #013e64;
+    padding: 10px;
+    border-radius: 5px;
+    border-left: 3px solid #3498db;
+    overflow-x: auto;
+    white-space: pre-wrap;
+    margin: 1em 0;
 }
 
-.datenschutzerklärung {
+pre code {
+    font-family: monospace;
+    color: whitesmoke;
+    background: none;
+    padding: 0;
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.blocktext {
     padding-top: 100px;
     text-align: justify;
     margin-left: 15%;
