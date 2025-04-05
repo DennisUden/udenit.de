@@ -42,10 +42,10 @@ $routes = [
         'canonical'     => '/datenschutz'
     ],
     '/blog' => [
-	    'controller'	=> 'blog/ksnip.php',
-	    'title'		=> 'UDENIT Blog - Einfache Screenshots in Linux',
-	    'description'	=> 'UDENIT Blog - Einfache Screenshots in Linux - Pfeilschnelle Bildaufnahmen und Annotierungen mithilfe von Ksnip als Alternative zu Snipping Tool',
-	    'canonical'		=> '/blog/ksnip'
+	    'controller'	=> 'blog/index.php',
+	    'title'		=> 'UDENIT Blog',
+	    'description'	=> 'UDENIT Blog',
+	    'canonical'		=> '/blog'
     ],
     '/blog/ksnip' => [
 	    'controller'	=> 'blog/ksnip.php',
