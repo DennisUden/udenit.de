@@ -14,14 +14,8 @@ $routes = [
     '/' => [
         'controller'    => 'index.php',
         'title'         => 'UDENIT - IT-Beratung und Dienstleistungen in Ihlow',
-        'description'   => 'UDENIT bietet IT-Beratung und Servermanagement in Ihlow, Ostfriesland – Ihr Experte für Netzwerke und IT-Lösungen.',
+        'description'   => 'UDENIT bietet IT-Beratung, Dienstleistungen für KMU und ehrenamtliche Betreuung im Rahmen der Nachbarschaftshilfe für Senioren in Ihlow, Ostfriesland', 
 	'canonical'     => '/'
-    ],
-    '/loesungen' => [
-        'controller'    => 'loesungen.php',
-        'title'         => 'UDENIT - IT-Lösungen für Unternehmen in Ihlow',
-        'description'   => 'IT-Lösungen für Firmen in Ihlow: Servermanagement, Netzwerkadministration und IT-Beratung von UDENIT in Ostfriesland.',
-        'canonical'     => '/loesungen'
     ],
     '/kontakt' => [
         'controller'    => 'kontakt.php',
@@ -75,7 +69,7 @@ function getTeaser($filePath) {
 }
 $filePath	= $_SERVER['DOCUMENT_ROOT'].'/controllers/blog/'.$articles[0]['file'];
 $link		= '/blog/'.basename($filePath, '.php');
-$title		= $articles[0]['title'];
+$articleTitle	= $articles[0]['title'];
 $author		= $articles[0]['author'];
 $published	= date('d.m.Y', strtotime($articles[0]['timestamp']));
 $teaser		= getTeaser($filePath);

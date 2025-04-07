@@ -7,7 +7,7 @@
 			<h1>UDENIT Blog</h1>
 		</div>
 		<div class="blocktext">
-			<h2><a href="<?php echo $link; ?>"><?php echo $title; ?></a></h2>
+			<h2><a href="<?php echo $link; ?>"><?php echo $articleTitle; ?></a></h2>
 			<p><?php echo $teaser; ?></p>
 			<p><?php echo "Veröffentlicht am ".$published." von ".$author; ?></p>
 		</div>
