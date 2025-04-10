@@ -37,8 +37,8 @@ $routes = [
     ],
     '/blog' => [
 	    'controller'	=> 'blog/index.php',
-	    'title'		=> 'UDENIT Blog',
-	    'description'	=> 'UDENIT Blog',
+	    'title'		=> 'UDENIT Blog - Tipps, Tricks und Praxiswissen von Dennis Uden',
+	    'description'	=> 'UDENIT Blog - Tipps, Tricks und Praxiswissen von Dennis Uden aus diversen Bereichen der IT, vor allem über Linux und Server.',
 	    'canonical'		=> '/blog'
     ],
     '/blog/ksnip' => [
