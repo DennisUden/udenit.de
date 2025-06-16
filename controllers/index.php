@@ -17,6 +17,9 @@
 			<p>Mit der automatisierten Lösung von UdenIT kein Problem mehr. Einfach in den Bilder-Ordner navigieren, Programm ausführen und die Bilder sind fertig zur Benutzung. Die Einrichtungskosten pro Arbeitsplatz belaufen sich auf 100€, die weitere Benutzung ist kostenlos. Das Programm läuft unter Windows, Linux und MacOS.</p>
 			<br>
 
+			<h2>Umstieg von Windows auf Linux Arbeitsplätze</h2>
+			<p>Das bevorstehende Support-Ende von Windows 10 wird viele Betriebe vor ein kostspieliges und arbeitsintensives Problem stellen. Entweder sind die PCs aktuell genug und unterstützen Windows 11 oder es müssen a) neue PCs angeschafft werden bzw. b) auf Linux umgestellt werden. UdenIT unterstützt Sie bei dieser Problematik</p>
+
 			<h2>Nachbarschaftshilfe</h2>
 			<p>Ehrenamtliche nachbarschaftliche Betreuung für Senioren in Ihlow rund um das Thema PC, Handy, Internet oder ähnlichen Themen.</p>
 			<br>
