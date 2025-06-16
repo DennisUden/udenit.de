@@ -19,6 +19,7 @@
 
 			<h2>Umstieg von Windows auf Linux Arbeitsplätze</h2>
 			<p>Das bevorstehende Support-Ende von Windows 10 wird viele Betriebe vor ein kostspieliges und arbeitsintensives Problem stellen. Entweder sind die PCs aktuell genug und unterstützen Windows 11 oder es müssen a) neue PCs angeschafft werden bzw. b) auf Linux umgestellt werden. UdenIT unterstützt Sie bei dieser Problematik</p>
+			<br>
 
 			<h2>Nachbarschaftshilfe</h2>
 			<p>Ehrenamtliche nachbarschaftliche Betreuung für Senioren in Ihlow rund um das Thema PC, Handy, Internet oder ähnlichen Themen.</p>
